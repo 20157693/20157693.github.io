@@ -2,7 +2,7 @@
 
 ### 🚀 Profile
 
-- Onboarded: \*August 29, 2025\* — a day that marks the beginning of something awesome
+- Onboarded: \*July 31, 2026\* — a day that marks the beginning of something awesome
 
 - Role: 🖥️ Software Developer — builder of clean code, breaker of bugs
 
