@@ -69,6 +69,46 @@ article,
   border-left-color: #1C8CA8;
 }
 
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact form */
+label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em;
+  font: inherit;
+  border: 1px solid #D3CDCC;
+}
+
+.error {
+  margin: 0.25em 0 0;
+  color: #E14775;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  font: inherit;
+  color: #FFFFFF;
+  background-color: #269D69;
+  border: none;
+  cursor: pointer;
+}
+
 footer {
   padding: 1em;
   text-align: center;
@@ -84,5 +124,11 @@ footer {
 
   .intro {
     grid-column: 1 / -1;
+  }
+
+  /* Pages that stay in one column (like Contact) */
+  .single-column {
+    display: flex;
+    max-width: 600px;
   }
 }

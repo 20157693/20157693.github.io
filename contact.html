@@ -3,55 +3,63 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Contact | TAFE Student 20157693</title>
   </head>
   <body>
     <header>
-      <a href="./index.html">TAFE Student 20157693</a>
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./resume.html">Résumé</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./mywork.html">Sample Project</a></li>
-          <li><a href="./contact.html" aria-current="page">Contact</a></li>
-        </ul>
-      </nav>
+      <img src="https://placehold.co/48?text=logo" alt="Logo">
+      <h1>Portfolio</h1>
     </header>
 
-    <main>
-      <h1>Contact Me</h1>
-      <figure>
-        <!-- <img src="./assets/img/profile.jpg" alt=""> -->
-        <figcaption>Profile picture</figcaption>
-      </figure>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./resume.html">Résumé</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./mywork.html">Sample Project</a></li>
+        <li><a href="./contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
 
-      <section aria-labelledby="details-heading">
-        <h2 id="details-heading">Contact Details</h2>
+    <main class="single-column">
+      <section class="intro">
+        <h2>Contact Me</h2>
+        <figure>
+          <img src="./assets/img/profile-2.jpg" width="400" height="267" alt="Black and white portrait of me smiling">
+        </figure>
       </section>
 
-      <section aria-labelledby="message-heading">
-        <h2 id="message-heading">Send a Message</h2>
+      <article class="card-green">
+        <h2>Contact Details</h2>
+        <p>Placeholder: contact details will go here.</p>
+      </article>
+
+      <article class="card-fuchsia">
+        <h2>Send a Message</h2>
         <form id="contact-form" novalidate>
           <label for="name">Name</label>
           <input type="text" id="name" name="name" autocomplete="name">
+          <p class="error" id="name-error" aria-live="polite"></p>
 
           <label for="email">Email</label>
           <input type="email" id="email" name="email" autocomplete="email">
+          <p class="error" id="email-error" aria-live="polite"></p>
 
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5"></textarea>
+          <p class="error" id="message-error" aria-live="polite"></p>
 
           <button type="submit">Send</button>
         </form>
-      </section>
+      </article>
     </main>
 
     <footer>
-      <p><small>&copy; 2026 TAFE Student 20157693</small></p>
+      <p>&copy; 2026 TAFE Student 20157693</p>
     </footer>
+
     <script src="./assets/js/contact.js"></script>
   </body>
 </html>
