@@ -1,0 +1,88 @@
+/* Placeholder styles (mobile first). Will be replaced by Tailwind. */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #FAF4F2;
+  color: #000000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em 1em;
+  background-color: #FFFFFF;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #D3CDCC;
+}
+
+nav li {
+  padding: 0.75em;
+}
+
+a {
+  color: #1C8CA8;
+  text-decoration: none;
+}
+
+a[aria-current="page"] {
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+article,
+.intro {
+  padding: 1em;
+  background-color: #FFFFFF;
+  border-left: 3px solid #D3CDCC;
+}
+
+.card-fuchsia {
+  border-left-color: #E14775;
+}
+
+.card-green {
+  border-left-color: #269D69;
+}
+
+.card-blue {
+  border-left-color: #1C8CA8;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+/* Tablet and desktop */
+@media screen and (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro {
+    grid-column: 1 / -1;
+  }
+}
