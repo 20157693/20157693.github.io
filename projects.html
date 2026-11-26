@@ -3,41 +3,151 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./portfolio/assets/css/site.css">
     <title>Projects | TAFE Student 20157693</title>
   </head>
-  <body>
-    <header>
-      <a href="./index.html">TAFE Student 20157693</a>
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./resume.html">Résumé</a></li>
-          <li><a href="./projects.html" aria-current="page">Projects</a></li>
-          <li><a href="./mywork.html">Sample Project</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <body class="flex min-h-screen flex-col">
+
+    <header class="w-full bg-white text-gray-700 shadow-sm">
+        <h1 class="sr-only">Certificate IV in IT (Programming)</h1>
+
+        <section class="mx-auto flex max-w-6xl flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between">
+            <h2 class="sr-only">Site header</h2>
+
+            <section class="flex items-center gap-4">
+                <h3 class="sr-only">Website identity</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1792262633238-6e8ecfa846dd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="man-looking-at-sky"
+                    class="h-16 w-16 rounded-full object-cover"
+                >
+
+                <p class="text-xl font-bold text-gray-500">
+                    Certificate IV in IT (Programming)
+                </p>
+            </section>
+
+            <nav aria-label="Main navigation">
+                <ul class="flex flex-wrap gap-4 text-sm">
+                    <li><a href="./index.html" class="hover:text-gray-900">Home</a></li>
+                    <li><a href="./portfolio/phase-1/index.html" class="hover:text-gray-900">Phase 1</a></li>
+                    <li><a href="./portfolio/phase-2/index.html" class="hover:text-gray-900">Phase 2</a></li>
+                    <li><a href="./portfolio/phase-3/copyright.html" class="hover:text-gray-900">Phase 3</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
-    <main>
-      <h1>Projects</h1>
-      <article aria-labelledby="phase-1-heading">
-        <h2 id="phase-1-heading">Phase 1</h2>
-      </article>
+    <main class="flex flex-wrap justify-center gap-4 px-6 py-8">
 
-      <article aria-labelledby="phase-2-heading">
-        <h2 id="phase-2-heading">Phase 2</h2>
-      </article>
+      <section class="w-full max-w-sm">
+          <h2 class="mb-3 text-center text-sm font-semibold uppercase tracking-widest text-gray-500">Phase 1 Portfolio</h2>
+          <br>
+          <article class="max-w-sm overflow-hidden rounded-lg bg-white shadow-md">
+              <header class="bg-gray-100 p-5">
+                  <h3 class="text-xl font-bold text-gray-900">
+                      Phase 1
+                  </h3>
+              </header>
+              <section class="p-5">
+                  <h4>This represents the initial project with just a simple web blog.</h4>
+                  <br>
+                  <p class="text-gray-600">
+                      View my Phase 1 portfolio.
+                  </p>
+                  <a href="./portfolio/phase-1/index.html"
+                      class="mt-4 inline-block font-semibold text-blue-700 hover:underline">
+                      View Phase 1
+                  </a>
+              </section>
+          </article>
+      </section>
 
-      <article aria-labelledby="phase-3-heading">
-        <h2 id="phase-3-heading">Phase 3</h2>
-      </article>
+      <section class="w-full max-w-sm">
+          <h2 class="mb-3 text-center text-sm font-semibold uppercase tracking-widest text-gray-500">Phase 2 Portfolio</h2>
+          <br>
+          <article class="max-w-sm overflow-hidden rounded-lg bg-white shadow-md">
+              <header class="bg-gray-100 p-5">
+                  <h3 class="text-xl font-bold text-gray-900">
+                      Phase 2
+                  </h3>
+              </header>
+              <section class="p-5">
+                  <h4>This is a clone of Phase 1 with an added API.</h4>
+                  <br>
+                  <p class="text-gray-600">
+                      View my Phase 2 portfolio.
+                  </p>
+                  <a href="./portfolio/phase-2/index.html"
+                      class="mt-4 inline-block font-semibold text-blue-700 hover:underline">
+                      View Phase 2
+                  </a>
+              </section>
+          </article>
+      </section>
+
+      <section class="w-full max-w-sm">
+          <h2 class="mb-3 text-center text-sm font-semibold uppercase tracking-widest text-gray-500">Phase 3 Portfolio</h2>
+          <br>
+          <article class="max-w-sm overflow-hidden rounded-lg bg-white shadow-md">
+              <header class="bg-gray-100 p-5">
+                  <h3 class="text-xl font-bold text-gray-900">
+                      Phase 3
+                  </h3>
+              </header>
+              <section class="p-5">
+                  <h4>In this phase, we add a copyright page and use Tailwind CSS to format this main page.</h4>
+                  <br>
+                  <p class="text-gray-600">
+                      View my Phase 3 portfolio.
+                  </p>
+                  <a href="./portfolio/phase-3/copyright.html"
+                      class="mt-4 inline-block font-semibold text-blue-700 hover:underline">
+                      View Phase 3
+                  </a>
+              </section>
+          </article>
+      </section>
+
     </main>
 
-    <footer>
-      <p><small>&copy; 2026 TAFE Student 20157693</small></p>
+    <footer class="mt-auto bg-gray-900 px-6 py-8 text-gray-300">
+        <section class="mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <h2 class="sr-only">Site footer</h2>
+            <section class="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+              <h3 class="sr-only">Copyright information</h3>
+                <img
+                    src="https://images.unsplash.com/photo-1792262633238-6e8ecfa846dd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="man-looking-at-sky"
+                    class="h-16 w-16 rounded-full object-cover"
+                >
+                <p class="text-sm">
+                    &copy; Copyright 2026 Adrian Gould and TAFE Student 20157693.
+                    All rights reserved.
+                </p>
+            </section>
+
+            <nav aria-label="Footer navigation">
+                <ul class="flex flex-wrap justify-center gap-4 text-sm">
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            North Metro TAFE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            ScreenCraft Dev Sites
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./portfolio/phase-3/copyright.html" class="hover:text-white">
+                            Copyright
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </footer>
 
   </body>
