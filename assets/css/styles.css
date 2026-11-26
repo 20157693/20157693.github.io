@@ -78,6 +78,14 @@ img {
   height: auto;
 }
 
+/* Résumé photos: 1 column on mobile, 2 on larger screens */
+.gallery {
+  display: grid;
+  gap: 1em;
+  padding: 0;
+  list-style: none;
+}
+
 /* Contact form */
 label {
   display: block;
@@ -124,6 +132,10 @@ footer {
 
   .intro {
     grid-column: 1 / -1;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* Pages that stay in one column (like Contact) */
