@@ -5,6 +5,10 @@ body {
   font-family: sans-serif;
   background-color: #FAF4F2;
   color: #000000;
+  /* Sticky footer: body fills the screen, main grows to push the footer down */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -45,6 +49,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  flex: 1;
+  align-content: start;
+  box-sizing: border-box;
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
@@ -86,14 +94,15 @@ img {
   list-style: none;
 }
 
-/* Contact form */
+/* Forms (Contact and Sample Project) */
 label {
   display: block;
   margin-top: 1em;
   font-weight: bold;
 }
 
-input,
+input[type="text"],
+input[type="email"],
 textarea {
   box-sizing: border-box;
   width: 100%;

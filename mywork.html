@@ -3,38 +3,61 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Sample Project | TAFE Student 20157693</title>
   </head>
   <body>
     <header>
-      <a href="./index.html">TAFE Student 20157693</a>
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./resume.html">Résumé</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./mywork.html" aria-current="page">Sample Project</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <img src="https://placehold.co/48?text=logo" alt="Logo">
+      <h1>Portfolio</h1>
     </header>
 
-    <main>
-      <h1>Sample Project</h1>
-      <section aria-labelledby="api-heading">
-        <h2 id="api-heading">API Ninjas Interface</h2>
-        <form id="api-form">
-          <!-- API route checkboxes, input and button go here -->
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./resume.html">Résumé</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./mywork.html" aria-current="page">Sample Project</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="single-column">
+      <article class="card-blue">
+        <h2>Live Financial Prices</h2>
+        <p>Choose an API Ninjas route below to get a live price.</p>
+
+        <form>
+          <label>
+            <input type="checkbox" id="bitcoinCheckbox"> Bitcoin
+          </label>
+          <label>
+            <input type="checkbox" id="stocksCheckbox"> Stocks
+          </label>
+
+          <section id="bitcoinFeature" hidden>
+            <h3>Current Bitcoin Price</h3>
+            <p id="coinPrice">Click the button for the price of Bitcoin!</p>
+            <button type="button" id="getCoinPrice">Get the Bitcoin Price</button>
+          </section>
+
+          <section id="stockFeature" hidden>
+            <h3>Current Stock Price</h3>
+            <p id="stockPrice">Click the button for the price of the stock!<br>
+              <small>Hint: The ticker tags for Apple, Google and Tesla are AAPL, GOOGL and TSLA. Try it!</small></p>
+            <label for="ticker">Ticker tag</label>
+            <input type="text" id="ticker" placeholder="Enter Ticker Tag">
+            <button type="button" id="getStockPrice">Get the Stock Price</button>
+          </section>
         </form>
-        <output id="api-response" for="api-form" aria-live="polite"></output>
-      </section>
+      </article>
     </main>
 
     <footer>
-      <p><small>&copy; 2026 TAFE Student 20157693</small></p>
+      <p>&copy; 2026 TAFE Student 20157693</p>
     </footer>
+
     <script src="./assets/js/mywork.js"></script>
   </body>
 </html>
