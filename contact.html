@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <title>Contact | Oosman Beekawoo</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">Oosman Beekawoo</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./resume.html">Résumé</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./mywork.html">Sample Project</a></li>
+          <li><a href="./contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contact Me</h1>
+      <figure>
+        <!-- <img src="./assets/img/profile.jpg" alt=""> -->
+        <figcaption>Profile picture</figcaption>
+      </figure>
+
+      <section aria-labelledby="details-heading">
+        <h2 id="details-heading">Contact Details</h2>
+      </section>
+
+      <section aria-labelledby="message-heading">
+        <h2 id="message-heading">Send a Message</h2>
+        <form id="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><small>&copy; 2026 Oosman Beekawoo</small></p>
+    </footer>
+    <script src="./assets/js/contact.js"></script>
+  </body>
+</html>
