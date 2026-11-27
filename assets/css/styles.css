@@ -86,6 +86,25 @@ img {
   height: auto;
 }
 
+/* Space between list items in cards */
+article li {
+  margin-bottom: 1em;
+}
+
+.gallery li {
+  margin-bottom: 0;
+}
+
+/* Profile photos fill their whole container (About and Contact) */
+.photo {
+  padding: 0;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+}
+
 /* Résumé photos: 1 column on mobile, 2 on larger screens */
 .gallery {
   display: grid;
