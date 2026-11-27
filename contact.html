@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/site.css">
     <title>Contact | TAFE Student 20157693</title>
   </head>
   <body>
@@ -24,7 +25,7 @@
     </nav>
 
     <main class="single-column">
-      <figure class="intro photo">
+      <figure class="intro photo overflow-hidden rounded-xl shadow-lg">
         <img src="./assets/img/profile-2.jpg" width="400" height="267" alt="Black and white portrait of me smiling">
       </figure>
 
@@ -38,18 +39,18 @@
         <h2>Send a Message</h2>
         <form id="contact-form" novalidate>
           <label for="name">Name</label><br>
-          <input type="text" id="name" name="name" autocomplete="name">
+          <input class="rounded-md focus:outline-none focus:ring-2 focus:ring-green" type="text" id="name" name="name" autocomplete="name">
           <p class="error" id="name-error" aria-live="polite"></p>
 
           <label for="email">Email</label><br>
-          <input type="email" id="email" name="email" autocomplete="email">
+          <input class="rounded-md focus:outline-none focus:ring-2 focus:ring-green" type="email" id="email" name="email" autocomplete="email">
           <p class="error" id="email-error" aria-live="polite"></p>
 
           <label for="message">Message</label><br>
-          <textarea id="message" name="message" rows="5"></textarea>
+          <textarea class="rounded-md focus:outline-none focus:ring-2 focus:ring-green" id="message" name="message" rows="5"></textarea>
           <p class="error" id="message-error" aria-live="polite"></p>
 
-          <button type="submit">Send</button>
+          <button class="rounded-md hover:opacity-80" type="submit">Send</button>
         </form>
       </article>
     </main>

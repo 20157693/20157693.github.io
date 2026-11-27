@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/site.css">
     <title>Sample Project | TAFE Student 20157693</title>
   </head>
   <body>
@@ -30,16 +31,16 @@
 
         <form>
           <label>
-            <input type="checkbox" id="bitcoinCheckbox"> Bitcoin
+            <input class="accent-blue" type="checkbox" id="bitcoinCheckbox"> Bitcoin
           </label>
           <label>
-            <input type="checkbox" id="stocksCheckbox"> Stocks
+            <input class="accent-blue" type="checkbox" id="stocksCheckbox"> Stocks
           </label>
           <br>
           <section id="bitcoinFeature" hidden>
             <h3>Current Bitcoin Price</h3>
             <p id="coinPrice">Click the button for the price of Bitcoin!</p>
-            <button type="button" id="getCoinPrice">Get the Bitcoin Price</button>
+            <button class="rounded-md hover:opacity-80" type="button" id="getCoinPrice">Get the Bitcoin Price</button>
           </section>
 
           <section id="stockFeature" hidden>
@@ -47,8 +48,8 @@
             <p id="stockPrice">Click the button for the price of the stock!<br>
               <small>Hint: The ticker tags for Apple, Google and Tesla are AAPL, GOOGL and TSLA. Try it!</small></p>
             <label for="ticker">Ticker tag</label>
-            <input type="text" id="ticker" placeholder="Enter Ticker Tag">
-            <button type="button" id="getStockPrice">Get the Stock Price</button>
+            <input class="rounded-md" type="text" id="ticker" placeholder="Enter Ticker Tag">
+            <button class="rounded-md hover:opacity-80" type="button" id="getStockPrice">Get the Stock Price</button>
           </section>
         </form>
       </article>
