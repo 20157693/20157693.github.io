@@ -16,7 +16,15 @@ header {
   align-items: center;
   gap: 1em;
   padding: 0.5em 1em;
-  background-color: #FFFFFF;
+  /* Same colour as the page, with a line between the header and the nav */
+  background-color: #FAF4F2;
+  border-bottom: 1px solid #D3CDCC;
+}
+
+/* Flag logo: 3:2 like the flag itself */
+header img {
+  width: 48px;
+  height: 32px;
 }
 
 header h1 {
