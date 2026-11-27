@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #FAF4F2;
+  background-color: #F5ECE6;
   color: #000000;
   /* Sticky footer: body fills the screen, main grows to push the footer down */
   display: flex;
@@ -17,7 +17,7 @@ header {
   gap: 1em;
   padding: 0.5em 1em;
   /* Same colour as the page, with a line between the header and the nav */
-  background-color: #FAF4F2;
+  background-color: #F5ECE6;
   border-bottom: 1px solid #D3CDCC;
 }
 
@@ -69,7 +69,8 @@ main {
 article,
 .intro {
   padding: 1em;
-  background-color: #FFFFFF;
+  /* Lighter cream than the page */
+  background-color: #FAF4F2;
   border-left: 3px solid #D3CDCC;
 }
 
@@ -114,8 +115,9 @@ article li {
 .mini-cards li {
   margin: 0;
   padding: 0.75em 1em;
-  background-color: #FFFFFF;
-  /* Faint outline so the white card still shows against the white section */
+  /* Lightest cream, just off white */
+  background-color: #FDFAF8;
+  /* Faint outline so the card shows against the section */
   border: 1px solid #E3E8EE;
   border-left: 3px solid #9FB3C8;
 }
