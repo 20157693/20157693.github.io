@@ -103,6 +103,23 @@ article li {
   margin-bottom: 0;
 }
 
+/* Résumé: list items as small cards, one per line, styled like the sections */
+.mini-cards {
+  display: grid;
+  gap: 0.75em;
+  padding: 0;
+  list-style: none;
+}
+
+.mini-cards li {
+  margin: 0;
+  padding: 0.75em 1em;
+  background-color: #FFFFFF;
+  /* Faint outline so the white card still shows against the white section */
+  border: 1px solid #E3E8EE;
+  border-left: 3px solid #9FB3C8;
+}
+
 /* Profile photos fill their whole container (About and Contact) */
 .photo {
   padding: 0;
@@ -119,6 +136,12 @@ article li {
   gap: 1em;
   padding: 0;
   list-style: none;
+}
+
+/* View counts centred under each photo, with a little space below */
+.gallery figcaption {
+  margin: 0.5em 0 1em;
+  text-align: center;
 }
 
 /* Home page hero: stacked on mobile, side by side on desktop */
