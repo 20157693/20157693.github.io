@@ -113,6 +113,67 @@ article li {
   list-style: none;
 }
 
+/* Home page hero: stacked on mobile, side by side on desktop */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1em 0;
+}
+
+.hello {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #E14775;
+}
+
+.hero h2 {
+  margin: 0.25em 0 0;
+  font-size: 2rem;
+}
+
+.hero h2 span {
+  color: #6B6B6B;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1C8CA8;
+}
+
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.button,
+.button-outline {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  border: 2px solid #269D69;
+}
+
+.button {
+  color: #FFFFFF;
+  background-color: #269D69;
+}
+
+.button-outline {
+  color: #269D69;
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+}
+
 /* Forms (Contact and Sample Project) */
 label {
   display: block;
@@ -158,7 +219,8 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .intro {
+  .intro,
+  .hero {
     grid-column: 1 / -1;
   }
 
@@ -170,5 +232,61 @@ footer {
   .single-column {
     display: flex;
     max-width: 600px;
+  }
+}
+
+/* Desktop: full-width photo with the text over its dark left side */
+@media screen and (min-width: 800px) {
+  /* Let the Home page use the full screen width */
+  .home {
+    display: block;
+    max-width: none;
+    padding: 0;
+  }
+
+  .hero {
+    justify-content: center;
+    /* Same shape as the photo (2048 x 1365) so none of it is cropped */
+    aspect-ratio: 3 / 2;
+    box-sizing: border-box;
+    padding: 4em 6vw;
+    color: #FFFFFF;
+    /* Dark gradient on the left keeps the text readable */
+    background-color: #000000;
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 60%),
+      url("../img/profile-main.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-text {
+    max-width: 32em;
+  }
+
+  /* The background replaces the mobile photo */
+  .hero-photo {
+    display: none;
+  }
+
+  .hello {
+    font-size: 7rem;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 span {
+    color: #BBBBBB;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    color: #5CC8E0;
+  }
+
+  .button-outline {
+    color: #FFFFFF;
   }
 }
